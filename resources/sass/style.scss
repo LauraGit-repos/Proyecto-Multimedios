@@ -1,0 +1,200 @@
+@import "myvars";
+
+header{
+    font-family: $font-main;
+    font-size: 1.3rem;
+    height: 0;
+}
+ 
+.app-bar .app-bar-menu>li>a{
+    font-size: 2rem;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+#registration{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 40px 10px 12px;
+    position: fixed;
+    z-index: 9999;
+    background-color: white;
+    margin-top: 0;
+    margin-left: 0;
+    &>li{
+        margin-left: 10px;
+        &>a{
+            color:black;
+        }
+    }
+}
+
+.mainMenu{
+    top:30px !important;
+    min-height: 100px;
+}
+
+#document-body{
+    padding: 120px 30px 10px 30px;
+}
+
+#search{
+    @include back-main-color(1.3rem);
+    height: 22px;
+    margin-top: 16px;
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: none;
+    -webkit-box-shadow: 3px 6px 2px 0px $shadow-color;
+    -moz-box-shadow: 3px 6px 2px 0px $shadow-color;
+    box-shadow: 3px 6px 2px 0px $shadow-color;
+    width: 300px;
+}
+
+#main-img{
+    width: 250px;
+}
+
+#btn-logout{
+    @include back-main-color(1.5rem);
+}
+
+[data-role="dropdown"]>li{
+    background-color: #ffdcba;
+    &>a{
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    &:hover{
+        text-decoration: underline;
+        background-color: $main-color !important;   
+    }
+}
+
+#map-google{
+    width: 400px;
+}
+
+@media (max-width:$break-point-phones){
+    #search{
+        display: none;
+    }
+    #main-img{
+        width: 150px;
+    }
+    #map-google{
+        width: 300px;
+    }
+}
+
+.main-title{
+    font-family: $font-main;
+    margin-top: 10px;
+}
+
+.button-submit{
+    @include back-main-color(1.5rem);
+    width: 60%;
+}
+
+#main-container{
+    max-width: 95%;
+}
+
+.my-img{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+/*For mobile*/
+#form-container{
+    width: 100%;
+    margin: 20px auto;
+}
+#card-container{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 5px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    &.card{
+        margin: 8px;
+        max-width: 90%;
+    }
+}
+
+#imagenes{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    &>img{
+        max-width: 50%;
+    }
+}
+
+#login-container{
+    width: 100%;
+    margin: 20px auto;
+}
+
+@media  (min-width:$break-point-phones){
+    #form-container{
+        width: 80%;
+    }
+    #card-container{
+        padding: 10px 10px;
+        width: 80%;
+        &.card {
+            margin: 8px;
+            max-width: 80%;
+        }
+    }
+
+    #login-container{
+        width: 80%;
+    }
+}
+
+@media  (min-width:$break-point-tablets){
+    #form-container{
+        width: 70%;
+    }
+    #card-container{
+        padding: 10px 15px;
+        width: 100%;
+    }
+    #card-container > .card{
+        margin: 5px;
+        max-width: 40%;
+    }
+    #login-container{
+        width: 70%;
+    }
+}
+
+@media  (min-width:$break-point-pc){
+    #form-container{
+        width: 50%;
+    }
+    #card-container{
+        padding: 10px 20px;
+        width: 100%;
+    }
+    #card-container > .card{
+        margin: 5px;
+        max-width: 25%;
+    }
+    #login-container{
+        width: 50%;
+    }
+}

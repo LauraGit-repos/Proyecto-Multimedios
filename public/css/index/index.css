@@ -1,0 +1,9 @@
+#imagenes{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#imagenes img{
+    max-width: 50%;
+}

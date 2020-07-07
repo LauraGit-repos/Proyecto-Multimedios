@@ -1,0 +1,36 @@
+.main-title{
+    font-family: Myfont;
+    margin-top: 10px;
+}
+
+.button-submit{
+    background-color: #ffdcba;
+    font-family: Myfont;
+    font-size: 1.5rem;
+    width: 60%;
+}
+
+/*For mobile*/
+#form-container{
+    width: 100%;
+    margin: 20px auto;
+}
+/*For low resolution tables and high resolution mobiles*/
+@media  (min-width:768px){
+    #form-container{
+        width: 80%;
+    }
+}
+/*For high resolution tablets and low resolution pc*/
+@media (min-width:992px){
+    #form-container{
+        width: 70%;
+    }
+}
+
+/*For most of pc and TV*/
+@media (min-width:1200px){
+    #form-container{
+        width: 50%;
+    }
+}

@@ -1,0 +1,24 @@
+/*
+@font-face{
+    font-family: 'Myfont';
+    src: url('fonts/FREESCPT.TTF') format('truetype');
+}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+$font-main: 'Dancing Script', cursive;
+
+$main-color: #ffdcba;
+
+$shadow-color: #dfc1a2; 
+
+/*Breakpoints for media queries*/
+$break-point-phones: 768px;
+$break-point-tablets: 992px;
+$break-point-pc: 1200px;
+
+@mixin back-main-color($size) {
+    font-family: $font-main;
+    font-size: $size;
+    background-color: $main-color;
+}
