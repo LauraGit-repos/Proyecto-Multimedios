@@ -1,6 +1,6 @@
 var template = 
 `
-<div  class="grid ml-auto mr-auto mw-100-sm mw-100 mw-75-md mw-50-lg mw-50-xl mw-25-xxl pl-10-md pr-10-md pr-15-xl pl-15-xl">
+<div  class="grid ml-auto mr-auto mw-100-sm mw-100 mw-75-md mw-50-lg mw-50-xl mw-50-xxl pl-10-md pr-10-md pr-15-xl pl-15-xl">
         <% if(this.products==0) { %>
             <h4 class="text-center">No añadió productos al carrito</h4>
         <% } else { %>

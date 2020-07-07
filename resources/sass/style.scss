@@ -81,6 +81,13 @@ header{
 #map-google{
     width: 400px;
 }
+.title_contact{
+    text-align: center;
+    font-family:$font-main;
+}
+.contact_paragraph{
+    text-align: center;
+}
 
 @media (max-width:$break-point-phones){
     #search{
@@ -146,6 +153,11 @@ header{
     width: 100%;
     margin: 20px auto;
 }
+.information{
+ margin: 10px;
+ padding: 2px;
+}
+
 
 @media  (min-width:$break-point-phones){
     #form-container{
@@ -179,6 +191,12 @@ header{
     }
     #login-container{
         width: 70%;
+    }
+    #form-contact{
+        width: 70%;
+        .label{
+            width: 10px;
+        }
     }
 }
 
