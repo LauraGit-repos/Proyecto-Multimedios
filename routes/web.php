@@ -29,6 +29,10 @@ Route::get('/products/cart','ProductController@cartProducts');
 Route::post('/products/add','ProductController@newProduct');
 Route::post('/products/edit','ProductController@changeProduct');
 Route::delete('/products/delete/{id}','ProductController@deleteProduct');
+Route::get('/products/pay','ProductController@payProducts');
+
+// photographs route
+Route::get('/photographs/add','Photographs@photograph');
 
 //Users routes
 Route::get('/users','UserController@users');

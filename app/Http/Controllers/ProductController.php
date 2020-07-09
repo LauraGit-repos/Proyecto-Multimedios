@@ -124,4 +124,7 @@ class ProductController extends Controller
         return view('products/cart-products');
     }
 
+    public function payProducts(){
+        return view('products/pay-products');
+    }
 }
