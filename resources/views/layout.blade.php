@@ -49,7 +49,7 @@
                     <li class="bg-white-hover">
                         <a href="#" class="dropdown-toggle">Fotografía</a>
                         <ul class="d-menu" data-role="dropdown">
-                            <li><a href="#">Todas las fotografías -</a></li>
+                            <li><a href="{{url('/photographs/all')}}">Todas las fotografías -</a></li>
                             <li><a href="{{url('/photographs/add')}}">Agregar fotografías -</a></li>
                         </ul>
                     </li>

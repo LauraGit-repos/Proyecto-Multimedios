@@ -33,6 +33,7 @@ Route::get('/products/pay','ProductController@payProducts');
 
 // photographs route
 Route::get('/photographs/add','Photographs@photograph');
+Route::get('/photographs/all','Photographs@allphotograph');
 
 //Users routes
 Route::get('/users','UserController@users');

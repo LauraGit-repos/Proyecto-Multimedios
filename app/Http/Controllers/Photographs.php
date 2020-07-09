@@ -10,4 +10,8 @@ class Photographs extends Controller
     {
         return view('photographs/add-photographs');
     }
+    public function allphotograph()
+    {
+        return view('photographs/all-photograph');
+    }
 }
